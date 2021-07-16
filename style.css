@@ -31,6 +31,13 @@ body{
 .flexvac{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.tac{
+    text-align: center;
+}
+.fz13{
+    font-size: 13px;
 }
 
 /* ---------section------------------ */
@@ -112,6 +119,42 @@ body{
 .goldcircle img{
     width: 100%;
 }
+.intro-eng{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.intro-ch{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.btnn{
+    width: 100px;
+    padding: 5px 0px;
+    border: 2px solid #bc955c;
+    position: relative;
+}
+.btnn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    width: 2px;
+    background-color: #bc955c;
+}
+.btnn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 100%;
+    width: 2px;
+    background-color: #bc955c;
+}
+.btall1{
+    border-top: 1px solid hsla(0,0%,100%,.1);
+}
 
 
 @media (min-width: 576px) {
@@ -125,10 +168,14 @@ body{
     .bl1{
         border-left: 1px solid #bc955c;
     }
+    .bb-md-none{
+        border-bottom: 0px;
+    }
 }
 
 @media (min-width: 992px) {
-
+    .container{
+        max-width: 760px;
 }
 
 @media (min-width: 1200px) {
