@@ -39,14 +39,35 @@ body{
 .fz13{
     font-size: 13px;
 }
+.w33pc{
+    width: 33.33%;
+}
+/* -------------header---------------- */
 
+.navnav{
+    height: 63px;
+    background-color: #002f3f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+.logopic img{
+    width: 200px;
+    object-fit:contain;
+    
+}
+.biglogopic{
+    display: none;
+}
 /* ---------section------------------ */
 .wrap{
     margin: 0 auto;
     padding: 5px; 
     border: 16px solid transparent;
     border-image: url(https://www.kebuke.com/wp-content/themes/project-theme-v2/src/img/frame-2m.svg) 16 round;
-    border-image-outset: -40px;
+    margin-top: 6rem;
 }
 .bordersp{
     border: 40px solid transparent;
@@ -179,5 +200,39 @@ body{
 }
 
 @media (min-width: 1200px) {
-
+    .navnav{
+       display: none;
+    }
+    .xlnav{
+        height: 133px;
+        padding-top: 20px;
+    }
+    /* .xlnav::after{
+        content:url();
+    } */
+    .space{
+        width: 42px;
+        height: 100%;
+    }
+    .logopic{
+        display: none;
+        
+    }
+    .biglogopic{
+        display: block;
+    }
+    .ham{
+        display: none;
+    }
+    .wrap{
+        margin-top: 3rem;
+    }
+    .w33pc{
+        width: auto;
+    }
+    .xlnav p{
+        /* margin-bottom: 0; */
+        margin: 0 30px;
+        color: #fff;
+    }
 }
